@@ -3,9 +3,9 @@ import React from 'react'
 import { DataSourceProvider } from '../../providers'
 import { Pagination, Search, Table } from '..'
 
-function Datatable({ source, schema }) {
+function Datatable({ driver, schema }) {
   return (
-    <DataSourceProvider source={source} schema={schema}>
+    <DataSourceProvider driver={driver} schema={schema}>
       <div className='std-card'>
         <Search />
         <Table />

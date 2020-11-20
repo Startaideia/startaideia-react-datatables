@@ -24,6 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
+    "react-icons": "^3.11.0",
     "react": "^16.0.0"
   },
   "devDependencies": {
@@ -59,8 +60,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "react-icons": "^3.11.0"
-  }
+  ]
 }

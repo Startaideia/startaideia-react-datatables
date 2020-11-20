@@ -1,14 +1,21 @@
-import React from 'react'
-import { BiSearch } from 'react-icons/bi'
+import React, { useContext } from 'react'
+
+import { DataSourceProviderContext } from '../../providers'
+import { Dropdown } from '..'
 
 function Search() {
+  const { query, setQuery } = useContext(DataSourceProviderContext)
+
   return (
     <div className='std-search'>
+      <Dropdown />
       <div>
-        <input type='text' placeholder='Pesquisar...' />
-        <button>
-          <BiSearch />
-        </button>
+        <input
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder='Pesquisar...'
+          value={query}
+          type='text'
+        />
       </div>
     </div>
   )

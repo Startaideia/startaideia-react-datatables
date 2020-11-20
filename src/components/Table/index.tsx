@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
-import { DataSourceProviderContext } from '../../providers'
+import React from 'react'
+import { useDriver } from '../../hooks'
 
 function Table() {
-  const { dataSchema, dataSource } = useContext(DataSourceProviderContext)
+  const { dataSchema, dataSource } = useDriver()
 
   return (
     <table className='std-table' cellSpacing='0'>

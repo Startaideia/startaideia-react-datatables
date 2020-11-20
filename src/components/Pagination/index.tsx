@@ -6,23 +6,37 @@ import {
   FiChevronRight
 } from 'react-icons/fi'
 
+import { useDriver } from '../../hooks'
+import { Dropdown } from '..'
+
 function Pagination() {
+  const {
+    handlePreviousPage,
+    setCurrentPage,
+    handleNextPage,
+    totalRecords,
+    currentPage,
+    totalPages
+  } = useDriver()
+
   return (
     <div className='std-pagination'>
+      <Dropdown />
+
       <div>
-        <div className='std-total'>70 items</div>
-        <button>
+        <div className='std-total'>{totalRecords} items</div>
+        <button onClick={() => setCurrentPage(1)}>
           <FiChevronsLeft />
         </button>
         <button>
-          <FiChevronLeft />
+          <FiChevronLeft onClick={handlePreviousPage} />
         </button>
-        <input type='text' />
-        of 12
-        <button>
+        <input type='text' value={currentPage} readOnly />
+        of {totalPages}
+        <button onClick={handleNextPage}>
           <FiChevronRight />
         </button>
-        <button>
+        <button onClick={() => setCurrentPage(totalPages)}>
           <FiChevronsRight />
         </button>
       </div>
