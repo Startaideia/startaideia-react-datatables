@@ -1,5 +1,6 @@
 import React from 'react'
-import { useDriver } from '../../hooks'
+
+import { useDriver } from 'hooks'
 
 function Table() {
   const { dataSchema, dataSource } = useDriver()

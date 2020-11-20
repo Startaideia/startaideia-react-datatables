@@ -1,5 +1,6 @@
 import { useCallback, useContext, useEffect } from 'react'
-import { DataSourceProviderContext } from '../../providers'
+
+import { DataSourceProviderContext } from 'providers'
 
 export default function () {
   const params = useContext(DataSourceProviderContext)

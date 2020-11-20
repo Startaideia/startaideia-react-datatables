@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDriver } from '../../hooks'
+import { useDriver } from 'hooks'
 
 function Dropdown() {
   const { perPage, setCurrentPage, setPerPage } = useDriver()

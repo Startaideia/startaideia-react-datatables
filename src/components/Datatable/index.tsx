@@ -1,7 +1,9 @@
 import React from 'react'
 
-import { DataSourceProvider } from '../../providers'
-import { Pagination, Search, Table } from '..'
+import { DataSourceProvider } from 'providers'
+import Pagination from '../Pagination'
+import Search from '../Search'
+import Table from '../Table'
 
 function Datatable({ driver, schema }) {
   return (

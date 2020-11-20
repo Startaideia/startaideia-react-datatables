@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { DataSourceProviderContext } from '..'
+
+import DataSourceProviderContext from '../DataSourceProviderContext'
 
 function DataSourceProvider({ driver, schema, children }) {
   const [dataSchema, setDataSchema] = useState<any>(schema || [])

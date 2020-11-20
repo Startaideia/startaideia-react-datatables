@@ -6,8 +6,8 @@ import {
   FiChevronRight
 } from 'react-icons/fi'
 
-import { useDriver } from '../../hooks'
-import { Dropdown } from '..'
+import { useDriver } from 'hooks'
+import Dropdown from '../Dropdown'
 
 function Pagination() {
   const {

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 
-import { DataSourceProviderContext } from '../../providers'
-import { Dropdown } from '..'
+import { DataSourceProviderContext } from 'providers'
+import Dropdown from '../Dropdown'
 
 function Search() {
   const { query, setQuery } = useContext(DataSourceProviderContext)
