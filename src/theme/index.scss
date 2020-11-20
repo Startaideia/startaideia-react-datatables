@@ -1,0 +1,110 @@
+.std-datatable {
+  width: 100%;
+
+  .std-table {
+    border: 1px solid #e6e6e6;
+    width: 100%;
+
+    thead {
+      tr {
+        th {
+          border-bottom: 1px solid #e6e6e6;
+          text-align: left;
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        th {
+          border-top: 1px solid #e6e6e6;
+          text-align: left;
+        }
+      }
+    }
+
+    td,
+    th {
+      padding: 10px;
+      height: 40px;
+    }
+  }
+
+  .std-card {
+    padding: 10px;
+  }
+
+  .std-search {
+    justify-content: flex-end;
+    display: flex;
+
+    & > div {
+      align-items: center;
+      margin-bottom: 10px;
+      display: flex;
+    }
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0px 10px;
+      font-size: 18px;
+      line-height: 0;
+      height: 40px;
+      width: 300px;
+      margin: 5px;
+    }
+
+    button {
+      border: 1px solid #ccc;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background: #fff;
+      font-size: 24px;
+      display: flex;
+      color: #444;
+      height: 40px;
+      width: 40px;
+      margin: 5px;
+    }
+  }
+
+  .std-pagination {
+    justify-content: flex-end;
+    display: flex;
+
+    & > div {
+      align-items: center;
+      margin-top: 10px;
+      display: flex;
+      height: 50px;
+    }
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 0;
+      height: 40px;
+      padding: 0px;
+      width: 50px;
+      margin: 5px;
+    }
+
+    button {
+      border: 1px solid #ccc;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background: #fff;
+      font-size: 24px;
+      display: flex;
+      color: #444;
+      height: 40px;
+      width: 40px;
+      margin: 5px;
+    }
+  }
+}
