@@ -18,17 +18,17 @@ function DataSourceProvider({ driver, schema, children }) {
         setCurrentPage,
         setDataSource,
         setDataSchema,
-        dataSource,
         setTotalPages,
+        totalRecords,
+        currentPage,
+        dataSource,
         totalPages,
         setPerPage,
-        currentPage,
-        totalRecords,
-        perPage,
         dataSchema,
+        setQuery,
+        perPage,
         driver,
-        query,
-        setQuery
+        query
       }}
     >
       <div className='std-datatable'>{children}</div>
